@@ -1,0 +1,48 @@
+{
+  "name": "strapi-plugin-page-builder",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "Page Builder",
+    "description": "A plugin to build your pages with the GrapesJS builder",
+    "kind": "plugin"
+  },
+  "dependencies": {
+    "@strapi/helper-plugin": "^4.3.0",
+    "grapesjs": "^0.19.5",
+    "grapesjs-blocks-basic": "^0.1.8",
+    "grapesjs-plugin-ckeditor": "0.0.10",
+    "grapesjs-preset-webpage": "^0.1.11",
+    "strapi-helper-plugin": "^3.6.10"
+  },
+  "peerDependencies": {
+    "typescript": "^4.6.3",
+    "@strapi/strapi": "^4.3.0",
+    "@strapi/typescript-utils": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jensuweb/strapi-plugin-page-builder.git"
+  },
+  "author": {
+    "name": "Jens Uwe Becker",
+    "email": "jens.becker@root-itsolutions.de",
+    "url": "https://root-itsolutions.de"
+  },
+  "maintainers": [
+    {
+      "name": "Jens Uwe Becker",
+      "email": "jens.becker@root-itsolutions.de",
+      "url": "https://root-itsolutions.de"
+    }
+  ],
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "develop": "tsc -w",
+    "build": "tsc"
+  },
+  "license": "MIT"
+}
