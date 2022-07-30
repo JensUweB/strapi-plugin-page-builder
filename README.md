@@ -15,7 +15,7 @@ You can find the official GrapesJS Demo [here!](https://grapesjs.com/demo.html) 
    - `npm link`
 3. Inside your strapi application: Run `npm link strapi-plugin-page-builder`
 
-To force your strapi admin panel to rebuild, please run `npm run -- --clean`.
+To force your strapi admin panel to rebuild, please run `npm run build -- --clean`.
 
 ## 🖐 Requirements
 
@@ -37,6 +37,7 @@ Please refer to the official Strapi installation requirement doc here: [Installa
 > The Page Builder Strapi plugin is designed for **Strapi v4.3**. It won't work with Strapi v3.x.
 
 ## 📝 License
+
 Copyright &copy; 2022 - [Jens Uwe Becker](https://root-itsolutions.de/)
 
 [MIT License](LICENSE.md)
