@@ -18,17 +18,17 @@ import './assets/js/fa-shim';
 // Doing so breaks grapes' toolbar callbacks
 // This dirty argument is here to nest svg in original element
 // instead of just replacing
-if ((window)?.FontAwesome) {
-  (window).FontAwesome.config.autoReplaceSvg = 'nest';
+if ((window as any)?.FontAwesome) {
+  (window as any).FontAwesome.config.autoReplaceSvg = 'nest';
 }
 
 const Editor = ({ onChange, name, value }) => {
-  const [mediaLibConfiguration, setMediaLibConfiguration] = useState({ open: false });
+  const [mediaLibConfiguration, setMediaLibConfiguration] = useState<any>({ open: false });
   const toggleMediaLib = () =>
     setMediaLibConfiguration((prev) => {
       return { ...prev, open: !prev.open };
     });
-  const [editor, setEditor] = useState();
+  const [editor, setEditor] = useState<GrapesJS.Editor>();
   const [editorConfigured, setEditorConfigured] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [pluginsLoaded, setPluginsLoaded] = useState(false);
@@ -116,7 +116,7 @@ const Editor = ({ onChange, name, value }) => {
         styleManager: styleManagerConfig,
         deviceManager: deviceManagerConfig,
         ...editorConfig,
-      })
+      } as any) as any
     );
     setMounted(true);
   }, [value, mounted, pluginsLoaded]);

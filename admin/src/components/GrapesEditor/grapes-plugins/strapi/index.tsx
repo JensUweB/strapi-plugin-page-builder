@@ -1,4 +1,4 @@
-import grapesjs from 'grapesjs';
+import GrapesJS from 'grapesjs';
 import loadComponents from './components';
 import loadBlocks from './blocks';
 import loadPanels from './panels';
@@ -6,7 +6,8 @@ import loadPanels from './panels';
 import { strapiRef, strapiPluginRef } from './consts';
 
 export default function addStrapiPlugin() {
-  grapesjs.plugins.add(strapiPluginRef, (editor, userOptions = {}) => {
+  // TODO: Check why typecheck doesn't work correctly here
+  (GrapesJS as any).plugins.add(strapiPluginRef, (editor, userOptions = {}) => {
     const defaults = {
       blocks: [strapiRef],
 
