@@ -36,7 +36,7 @@ export default {
       name,
     };
 
-    app.registerField({ type: 'json', Component: Wysiwyg });
+    app.addFields({ type: 'json', Component: Wysiwyg });
     app.registerPlugin(plugin);
   },
 
