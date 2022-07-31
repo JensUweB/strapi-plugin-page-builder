@@ -4,6 +4,8 @@ Based on the Strapi 3.0 Plugin [Webpage Builder](https://github.com/uwizy/strapi
 
 You can find the official GrapesJS Demo [here!](https://grapesjs.com/demo.html) You want to contribute to [GrapesJS](https://grapesjs.com/)? [Here](https://github.com/artf/grapesjs) is the official repository.
 
+> :warning: **This plugin does not work yet.** See issues tab for more information. If you want to try it nonetheless, follow install instructions below or visit this page later again.
+
 <img alt="Image of the GrapesJS web builder" src="https://grapesjs.com/img/sc-grapesjs-newsletter-demo.jpg">
 
 ## ⏳ Installation
