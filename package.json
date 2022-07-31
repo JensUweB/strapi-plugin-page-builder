@@ -9,16 +9,12 @@
   },
   "dependencies": {
     "@strapi/helper-plugin": "^4.3.0",
+    "@strapi/strapi": "^4.3.0",
+    "@strapi/typescript-utils": "^4.3.0",
     "grapesjs": "^0.19.5",
     "grapesjs-blocks-basic": "^0.1.8",
     "grapesjs-plugin-ckeditor": "0.0.10",
-    "grapesjs-preset-webpage": "^0.1.11",
-    "strapi-helper-plugin": "^3.6.10"
-  },
-  "peerDependencies": {
-    "typescript": "^4.6.3",
-    "@strapi/strapi": "^4.3.0",
-    "@strapi/typescript-utils": "^4.3.0"
+    "grapesjs-preset-webpage": "^0.1.11"
   },
   "repository": {
     "type": "git",
