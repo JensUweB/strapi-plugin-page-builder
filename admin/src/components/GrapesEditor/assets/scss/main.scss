@@ -1,5 +1,15 @@
+@use "sass:math";
+
+// Vendor Styles
+@import '~grapesjs/src/styles/scss/gjs_variables.scss';
+@import '~spectrum-colorpicker/spectrum';
+// @import '~codemirror/lib/codemirror';
+// @import '~codemirror/theme/hopscotch';
+
+// Custom Styles
 @import './variables';
 @import './grapes_main.scss';
+
 .gjs-block-label {
     font-size: 1rem;
 }
