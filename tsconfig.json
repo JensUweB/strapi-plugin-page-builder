@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "lib": [
-      "ES2020"
-    ],
+    "rootDir": ".",
+    "outDir": "dist/strapi-plugin-page-builder",
     "target": "ES2019",
+    "module": "CommonJS",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
     "strict": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -13,24 +17,26 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "noEmitOnError": true,
-    "outDir": "dist",
-    "rootDir": "."
+    "allowJs": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
   },
 
   "include": [
-    // Include the root directory
-    "server",
-    // Force the JSON files in the src folder to be included
-    "server/**/*.json"
+    "./admin/**/*",
+    "./server/**/*",
+    "./strapi-admin.*",
+    "./strapi-server.*",
+    "./LICENSE.md",
+    "./README.md"
   ],
 
   "exclude": [
-    "node_modules/",
-    "dist/",
-
-    // Do not include admin files in the server compilation
-    "admin/",
-    // Do not include test files
+    "**/node_modules/**/*",
+    "./dist",
+    "**/build/**/*",
     "**/*.test.ts"
   ]
 }

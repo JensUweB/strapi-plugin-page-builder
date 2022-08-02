@@ -38,7 +38,9 @@
   },
   "scripts": {
     "develop": "tsc -w",
-    "build": "tsc"
+    "build": "tsc",
+    "build:dev": "",
+    "link": "cd dist/strapi-plugin-page-builder && npm link"
   },
   "license": "MIT"
 }
